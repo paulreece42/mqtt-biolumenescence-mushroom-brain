@@ -1,0 +1,4 @@
+[Unit]
+Description=target allowing to start/stop all instances at once
+[Install]
+WantedBy=multi-user.target

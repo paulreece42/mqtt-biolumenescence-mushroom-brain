@@ -1,0 +1,12 @@
+[Unit]
+Description=Mushroom color cycle controller
+After=network.target
+
+[Service]
+EnvironmentFile=/etc/sysconfig/mushroom_mqtt
+ExecStart=/opt/color_cycle.py
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=mushroom-mqtt.target
